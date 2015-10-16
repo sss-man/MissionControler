@@ -19,10 +19,39 @@
 </head>
 <body>
 
+<form>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">New Mission</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+
+                    <div class="form-group">
+                        <label for="exampleInput1">Mission Description</label>
+                        <input type="text" class="form-control" id="exampleInput1" placeholder="Mission Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput2">Countdown</label>
+                        <input type="text" class="form-control" id="exampleInput2" placeholder="30:00">
+                    </div>
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Confirm</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</form>
 
 <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading"><input type="button"  class="btn btn-primary" value="Add"></div>
+    <div class="panel-heading"><input type="button"  class="btn btn-primary" value="Add" data-toggle="modal" data-target="#myModal"></div>
 
     <table class="table">
         <thead>
@@ -60,6 +89,9 @@
         </tbody>
     </table>
 </div>
+
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
